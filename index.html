@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <header class="header">
+    <img src="./images/logo.svg" alt="logo" class="logo">
+    <button class="btn open hidden" aria-label="open menu button">
+      <img src="./images/icon-menu.svg" alt="">
+    </button>
+    <div class="menu hidden">
+      <button class="btn close hidden" aria-label="close menu button">
+        <img src="./images/icon-close-menu.svg" alt="">
+      </button>
+      <ul class="menu_items">
+        <li>
+          <div class="clickable_item">
+            <p>Features</p>
+            <img src="./images/icon-arrow-down.svg" class="icon arrow" alt="">
+          </div>
+          <ul class="features inner_list hidden">
+            <li>
+              <img src="./images/icon-todo.svg" class="icon inner" alt="">
+              <p>Todo List</p>
+            </li>
+            <li>
+              <img src="./images/icon-calendar.svg" class="icon inner" alt="">
+              <p>Calendar</p>
+            </li>
+            <li>
+              <img src="./images/icon-reminders.svg" class="icon inner" alt="">
+              <p>Reminders</p>
+            </li>
+            <li>
+              <img src="./images/icon-planning.svg" class="icon inner" alt="">
+              <p>Planning</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="clickable_item">
+            <p>Company</p>
+            <img src="./images/icon-arrow-down.svg" class="icon arrow" alt="">
+          </div>
+          <ul class="company inner_list hidden">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+        <li>
+          <p>Careers</p>
+        </li>
+        <li>
+          <p>About</p>
+        </li>
+      </ul>
+      <div class="btns">
+        <button class="btn">login</button>
+        <button class="btn register">register</button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <picture class="hero_img">
+      <source srcset="./images/image-hero-desktop.png" media="(min-width: 800px)">
+      <img src="./images/image-hero-mobile.png" alt="">
+    </picture>
+    <div class="main__content">
+      <h1>Make remote work</h1>
+      <p class="description">
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </p>
+      <button class="learn_more_btn">Learn more</button>
+      <nav class="sponsors">
+        <img src="./images/client-databiz.svg" alt="client-databiz" class="sponsor_icon">
+        <img src="./images/client-audiophile.svg" alt="client-audiophile" class="sponsor_icon">
+        <img src="./images/client-meet.svg" alt="client-meet" class="sponsor_icon">
+        <img src="./images/client-maker.svg" alt="client-maker" class="sponsor_icon">
+      </nav>
+    </div>
+  </main>
+</body>
+</html>
